@@ -13,7 +13,7 @@ body{
 .logos img{
     width: auto;
     padding: 10px;
-    height: 14vh;
+    height: 100px;
 }
 .nav{
     justify-content: space-evenly;
@@ -37,7 +37,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding:10px;
+    text-align: center;
     background: #0000004d ;
     width: 100%;
     color: white;
@@ -88,14 +89,12 @@ body{
     justify-content: center;
 }
 .skills img{
+    margin: auto;
     height: 130px;
 }
 
 .card{
-    height: 185px;
-    width:fit-content;
-    border-radius: 10px;
-    background-color: #fff;
+    --bs-card-border-color: rgba(255, 255, 255, 0) !important;
     margin: 10px;
 
 }
@@ -241,6 +240,38 @@ p{
     }
   }
 
+
+@media (max-width: 1050px){
+    .logos img{
+        /* width:min-content
+        padding: 10px;
+        height: 100px; */
+    }
+}
+
+@media (max-width : 450px){
+    .logos img{
+        width: fit-content;
+        height: 60px;
+    }
+
+    .card img {
+        padding: 5px;
+        width: 15vh;
+    }
+    .skills{
+        padding: 0px 0px !important;
+        justify-content: space-around;
+
+        img{
+            height: 90px;
+        
+        }
+    }
+    .carousel-inner img {
+        height: 40vh;
+    }
+}
 /*  Table Styling */
 
 
