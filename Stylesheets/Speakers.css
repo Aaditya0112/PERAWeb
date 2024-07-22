@@ -1,0 +1,59 @@
+.speaker_box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+     /* isse changes aa sakti hai*/
+    margin-top: 20px;
+    max-height: 1200px;
+    max-width: 100%;
+}
+.speaker-card1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0px;
+    margin-left: 60px;
+    width: 60%;
+    padding:  5px;
+    box-shadow: 0px 0px 2px black;
+    background-color: white;
+    border-radius: 4px;
+    
+    
+}
+.speaker-card2{
+    display: flex;
+    flex-direction: row;
+    
+    
+    align-items: center;
+    margin: 10px 520px;
+    width: 60%;
+    padding:  5px;
+    box-shadow: 0px 0px 2px black;
+    background-color: white;
+    border-radius: 4px;
+    
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: start;
+    margin-left: 20px;
+
+}
+.heading h1{
+    text-align: center;
+    color: #063c2a;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.speaker-card1 img, .speaker-card2 img{
+    border: 1px solid #0000004d;
+    border-radius: 50%;
+    margin : 2px;
+    height: 160px;
+    width : 160px
+}

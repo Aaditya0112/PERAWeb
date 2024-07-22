@@ -1,0 +1,264 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.logos{
+
+    display: flex;
+    justify-content: space-between;
+}
+.logos img{
+    width: auto;
+    padding: 10px;
+    height: 14vh;
+}
+.nav{
+    justify-content: space-evenly;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #0d6efd !important;
+    background-color: inherit  !important;
+}
+.carousel-inner
+{
+    display: flex;
+    align-items: center;
+}
+.carousel-inner img {
+    height: 100vh;
+}
+.carousel-item{
+    z-index: -10;
+}
+.cap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: #0000004d ;
+    width: 100%;
+    color: white;
+}
+
+.cap a{
+    text-decoration: none;
+        font-weight: bold;
+        width: fit-content;
+        margin : 5px;
+        padding : 5px 8px;
+        color: #fff;
+        background-color: #2d88e4;
+        border-radius: 5px;
+}
+.ref, .self{
+    display: flex;
+}
+/* .pes img{
+    background-color: #121212;
+    border-radius: 10px;
+} */
+
+.announcement{
+    animation: ticker 7s linear infinite;
+    color: tomato;
+    min-height: 20%;
+
+}
+.announcement:hover{
+    animation-play-state: paused;
+}
+.announcement h1{
+    width: fit-content;
+}
+
+.announcement a{
+    color: tomato;
+    text-decoration: none;
+
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 125px !important;
+    justify-content: center;
+}
+.skills img{
+    height: 130px;
+}
+
+.card{
+    height: 185px;
+    width:fit-content;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+
+}
+
+.card img{
+    padding: 5px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+.sub-heading{
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.about-pera{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 7vh 0 7vh;
+}
+b{
+    font-size: larger;
+    font-weight: bolder; 
+}
+p{
+    font-size: large;
+}
+.talks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   /* isse changes aa sakti hai*/
+    margin-top: 20px;
+    max-height: 1200px;
+    
+    width: 80%;
+}
+.talk-card{
+    border-bottom: 0px solid #0000004d;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 10px 0px;
+    min-width: 25%;
+    padding:  5px;
+    margin: 1% 20% 1% 20%;
+    box-shadow: 1px 1px 5px black;
+    background-color: white;
+    border-radius: 4px;
+    
+}
+
+.timeline-1 {
+    border-left: 3px solid #656cb5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(99, 113, 177, 0.09);
+    margin: 0 auto;
+    position: relative;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 {
+      max-width: 98%;
+      padding: 25px;
+    }
+  }
+  
+  .timeline-1 .event {
+    border-bottom: 1px dashed #000;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 .event {
+      padding-top: 30px;
+    }
+  }
+  
+  .timeline-1 .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  
+  .timeline-1 .event:before,
+  .timeline-1 .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline-1 .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 .event:before {
+      left: 0px;
+      text-align: left;
+    }
+  }
+  
+  .timeline-1 .event:after {
+    -webkit-box-shadow: 0 0 0 3px #6569b5;
+    box-shadow: 0 0 0 3px #6569b5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 .event:after {
+      left: -31.8px;
+    }
+  }
+
+/*  Table Styling */
+
+
+
+
+
+
+
+
+.purple{
+    color:#0087fe
+}
+@keyframes ticker {
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
