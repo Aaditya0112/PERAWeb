@@ -121,6 +121,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 7vh 0 7vh;
+    background-color: rgb(233 78 171 / 9%);
 }
 b{
     font-size: larger;
@@ -158,6 +159,10 @@ p{
     background-color: white;
     border-radius: 4px;
     
+}
+
+.navbar-nav{
+    --bs-nav-link-color: rgb(227 21 21 / 65%) !important;
 }
 
 .timeline-1 {
@@ -271,6 +276,28 @@ p{
     .carousel-inner img {
         height: 42.5vh;
     }
+}
+
+@media (min-width: 768px) { /* to be changed wrt third breakpoint*/
+    .container-fluid {
+        width: fit-content;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-around;
+
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+      }
+
+      .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+      }
 }
 /*  Table Styling */
 
